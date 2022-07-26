@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="imagex/png" href="./img/logo1.png">
+
+    <title>Herbalife 💚</title>
+
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+
+<body>
+
+    
+    <div class="box">
+        <?php if (!empty($_GET['msgErro'])) { ?>
+            <div class="alertErro" role="alert">
+                <?php echo$_GET['msgErro']; ?>
+            </div>
+        <?php } ?>
+    
+        <?php if (!empty($_GET['msgSucesso'])) { ?>
+            <div class="alertSucesso" role="alert">
+                <?php echo$_GET['msgSucesso']; ?>
+            </div>
+        <?php } ?>
+
+        <div class="image">
+            <img src="./img/nuviomail logo.png" alt="Logo" width="500">
+        </div>
+
+        <form data-form>
+            <input data-email type="email" name="email" id="email" placeholder="Email">
+            <input data-senha type="password" name="senha" id="senha" placeholder="Senha">
+            <div class="eye">
+                <span class="lnr lnr-eye"></span>
+            </div>
+            <!-- <input type="submit" value="Entrar"> -->
+            <div class="btns">
+                <input id="submit" name="submit" type="submit" value="Entrar">
+                <!-- <a class="signUp" href="./cadastro.php">Cadastrar</a> -->
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #222;
+
+}
+
+.draw {
+    width: 20em;
+    height: 20em;
+    background: #555;
+    z-index: -999;
+}
+
+/*/////////////////
+    HEADER
+/////////////////*/
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+}
+
+header nav, header nav {
+    display: flex;
+}
+
+header nav a {
+    margin-right: 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 1s ease;
+}
+
+header nav a:hover {
+    color: #555;
+}
+
+header .logo {
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #fff;
+    margin-left: .5em;
+}
+
+/*/////////////////
+    MAIN
+/////////////////*/
+
+main {
+    position: relative;
+    top: 4.5em;
+}
+
+.main {
+    background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)100%), url('../imgs/vigilante-bancário.jpg');
+    height: 50em;
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(0, 0, 0, .5);
+    width: 30em;
+    height: 25em;
+    -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 23% 100%);
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+}
+
+.wrapper .texto {
+    position: relative;
+    top: 3em;
+    left: 1em;
+}
+
+.wrapper .escudo {
+    position: relative;
+    left: 2em;
+    top: 4em;
+}
+
+/*/////////////////
+    SERVIÇOS
+/////////////////*/
+
+#Servicos .letter h1 {
+    position: relative;
+    left: 10em;
+    width: 5em;
+    margin-top: 2em;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    letter-spacing: .2em;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.box-servico {
+    background: #ffe600;
+    color: #000;
+    border-radius: 1em;
+    width: 20em;
+    height: 25em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.box-servico ion-icon {
+    font-size: 14em;
+}
+
+.box-servico p {
+    font-size: 2em;
+}
+
+.box-servico:hover {
+    position: relative;
+    top: -2em;
+    color: #000;
+}
+
+/*/////////////////
+    QUEM SOMOS
+/////////////////*/
+
+#QuemSomos .letter h1 {
+    position: relative;
+    left: 9.25em;
+    width: 15em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    letter-spacing: .2em;
+}
+
+.time {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)100%), url('../imgs/time.jpeg');
+    height: 70em;
+    background-size: cover;
+}
+
+.time p {
+    color: #fff;
+    position: relative;
+    top: 10em;
+    left: 0;
+    font-size: 5em;
+    text-align: center;
+}
+
+/*/////////////////
+    BENEFICIOS
+/////////////////*/
+
+#Beneficios .letter h1 {
+    position: relative;
+    left: 9.8em;
+    width: 15em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    letter-spacing: .2em;
+}
+
+.list-beneficios {
+    color: #fff;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    margin-left: 15em;
+}
+
+.list-beneficios ul li {
+    margin-bottom: 1em;
+    /* border-bottom: .01em solid #eeff00; */
+    filter: drop-shadow(0 3px 3px #ffe600);
+    text-shadow: 2px 2px #000;
+}
+
+/*/////////////////
+    CONTATO
+/////////////////*/
+
+#Contato {
+    margin-top: 4em;
+    background: #111;
+    display: flex;
+}
+
+.contato {
+    position: relative;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(0, 0, 0, .5);
+    width: 40em;
+    height: 12em;
+    -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 23% 100%);
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.contato a, .contato span {
+    color: #fff;
+    margin-top: 2em;
+}
+
+.img {
+    margin-left: 7em;
+}

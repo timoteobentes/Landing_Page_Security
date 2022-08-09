@@ -3,7 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffe600;
+    border-radius: 10px;
 }
 
 body {
@@ -24,12 +37,11 @@ body {
 
 header {
     position: absolute;
-    top: 0;
     width: 100%;
+    height: 5em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #000;
+    justify-content: center;
 }
 
 header nav, header nav {
@@ -45,18 +57,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #555;
-}
-
-header .logo {
-    margin-left: 1em;
-    display: flex;
-    align-items: center;
-}
-
-header .logo h1 {
-    color: #fff;
-    margin-left: .5em;
+    color: #999;
 }
 
 /*/////////////////
@@ -84,20 +85,34 @@ main {
     background: rgba(0, 0, 0, .5);
     width: 30em;
     height: 25em;
-    -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 23% 100%);
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
 }
 
 .wrapper .texto {
     position: relative;
     top: 3em;
-    left: 1em;
+    left: 4em;
 }
 
 .wrapper .escudo {
     position: relative;
-    left: 2em;
+    left: 4em;
     top: 4em;
+}
+
+.acoes a {
+    position: relative;
+    top: 4em;
+    left: 6em;
+    color: #fff;
+    background: #222;
+    padding: .5em;
+    border-radius: .5em;
+    transition: all 1s ease;
+}
+
+.acoes a:hover {
+    background: #000;
 }
 
 /*/////////////////
@@ -107,12 +122,13 @@ main {
 #Servicos .letter h1 {
     position: relative;
     left: 10em;
-    width: 5em;
+    width: 5.4em;
     margin-top: 2em;
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5em;
     letter-spacing: .2em;
+    border-bottom: 1px solid #ffe600;
 }
 
 .boxes {
@@ -123,8 +139,7 @@ main {
 }
 
 .box-servico {
-    background: #ffe600;
-    color: #000;
+    color: #fff;
     border-radius: 1em;
     width: 20em;
     height: 25em;
@@ -137,17 +152,18 @@ main {
 }
 
 .box-servico ion-icon {
+    color: #ffe600;
     font-size: 14em;
+    transition: all 1s ease;
+}
+
+.box-servico ion-icon:hover {
+    font-size: 16em;
+    filter: drop-shadow(0 7px 10px #000);
 }
 
 .box-servico p {
     font-size: 2em;
-}
-
-.box-servico:hover {
-    position: relative;
-    top: -2em;
-    color: #000;
 }
 
 /*/////////////////
@@ -157,13 +173,15 @@ main {
 #QuemSomos .letter h1 {
     position: relative;
     left: 9.25em;
-    width: 15em;
+    width: 7.4em;
     margin-top: 2em;
     margin-bottom: 1em;
+    text-align: center;
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5em;
     letter-spacing: .2em;
+    border-bottom: 1px solid #ffe600;
 }
 
 .time {
@@ -188,29 +206,49 @@ main {
 #Beneficios .letter h1 {
     position: relative;
     left: 9.8em;
-    width: 15em;
+    width: 6.3em;
     margin-top: 2em;
     margin-bottom: 1em;
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5em;
     letter-spacing: .2em;
+    display: flex;
+    border-bottom: 1px solid #ffe600;
 }
 
 .list-beneficios {
     color: #fff;
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     display: flex;
-    margin-left: 15em;
+    margin-left: 12em;
+}
+
+#Beneficios .image ion-icon {
+    font-size: 40em;
+    color: #ffe600;
+    position: relative;
+    left: .5em;
+    filter: drop-shadow(0 7px 10px #000);
+}
+
+#Beneficios .conteudo {
+    display: flex;
+    align-items: center;
 }
 
 .list-beneficios ul li {
+    display: flex;
+    align-items: center;
     margin-bottom: 1em;
-    /* border-bottom: .01em solid #eeff00; */
-    filter: drop-shadow(0 3px 3px #ffe600);
-    text-shadow: 2px 2px #000;
+    list-style-type: none;
+}
+
+.list-beneficios ul li::before {
+    content: '➡';
+    display: inline-block;
+    margin-right: .5em;
 }
 
 /*/////////////////
@@ -225,22 +263,129 @@ main {
 
 .contato {
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgba(0, 0, 0, .5);
     width: 40em;
-    height: 12em;
+    height: 17em;
     -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 23% 100%);
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
     display: flex;
     flex-direction: column;
 }
 
-.contato a, .contato span {
+.contato span {
     color: #fff;
-    margin-top: 2em;
+    position: relative;
+    top: 8em;
+    left: 1em;
+    margin-bottom: .2em;
+}
+
+.contato a {
+    color: #fff;
+}
+
+.contato .rs {
+    color: #fff;
+    font-size: 2em;
+    position: relative;
+    left: 1em;
 }
 
 .img {
-    margin-left: 7em;
+    display: flex;
+    align-items: center;
+}
+
+.img h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+}
+
+.img img {
+    margin-left: .7em;
+}
+
+/*/////////////////
+    FOOTER
+/////////////////*/
+
+footer {
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 1em;
+    width: 15em;
+}
+
+footer a {
+    color: #fff;
+}
+
+/*/////////////////
+    QUERIES
+/////////////////*/
+
+@media screen and (max-width: 850px) {
+
+    .main {
+        background: none;
+    }
+    .wrapper {
+        width: 24em;
+        clip-path: none;
+    }
+    #Servicos .letter h1 {
+        left: 2em;
+    }
+    .wrapper .escudo {
+        width: 15em;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+    #QuemSomos .letter h1 {
+        left: 1.5em;
+    }
+    .time {
+        background: none;
+    }
+
+    .time p {
+        top: 1em;
+    }
+    #Beneficios .letter h1 {
+        left: 1.8em;
+    }
+    .list-beneficios {
+        margin-left: 0;
+    }
+    #Beneficios .image ion-icon {
+        left: 0;
+    }
+    #Beneficios .conteudo {
+        flex-direction: column;
+    }
+    #Contato {
+        flex-direction: column;
+    }
+    .contato {
+        width: 30em;
+    }
+    .img {
+        position: relative;
+        left: 7em;
+    }
+    .img h1 {
+        font-size: 3em;
+    }
+    .img img {
+        width: 250px;
+    }
+    footer {
+        top: 6em;
+        padding-bottom: 1em;
+    }
 }

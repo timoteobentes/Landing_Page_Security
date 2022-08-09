@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
 
     <title>Security's Landing Page</title>
 
@@ -15,11 +17,7 @@
     <!-- <div class="draw"></div> -->
 
     <header>
-        <div class="logo">
-            <img src="./imgs/logo.png" alt="Logo" width="70">
-            <h1>S.E.G</h1>
-        </div>
-        <nav>
+        <nav class="nav">
             <a href="#Servicos">Serviços</a>
             <a href="#QuemSomos">Quem Somos</a>
             <a href="#Beneficios">Benefícios</a>
@@ -36,6 +34,9 @@
                 <div class="texto">
                     <h1>Segurança Privada</h1>
                     <p>Sua Segurança é nossa prioridade</p>
+                </div>
+                <div class="acoes">
+                    <a href="#">Solicitar Orçamento</a>
                 </div>
             </div>
         </section>
@@ -72,7 +73,7 @@
                 <h1>Quem Somos</h1>
             </div>
             <div class="time">
-                <p>Somos uma empresa comprometida com os nossos clientes para garatia de sua segurança</p>
+                <p>Somos uma empresa comprometida com os nossos clientes para garantia de sua segurança</p>
             </div>
         </section>
 
@@ -80,13 +81,18 @@
             <div class="letter">
                 <h1>BENEFÍCIOS</h1>
             </div>
-            <div class="list-beneficios">
-                <ul>
-                    <li>Rondas motorizadas constantes</li>
-                    <li>Rigorosa abordagem na enstrada e saída de veísulos</li>
-                    <li>Fornece meios de provas mais eficazes para responsabilização de atos</li>
-                    <li>Previne perdas internas</li>
-                </ul>
+            <div class="conteudo">
+                <div class="image">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+                <div class="list-beneficios">
+                    <ul>
+                        <li>Rondas motorizadas constantes</li>
+                        <li>Rigorosa abordagem na enstrada e saída de veísulos</li>
+                        <li>Fornece meios de provas mais eficazes para responsabilização de atos</li>
+                        <li>Previne perdas internas</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -95,15 +101,26 @@
                 <span>Telefone: <a href="#">(99) 9 99999-9999</a></span>
                 <span>Email: <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a></span>
                 <span>Local: Rua X, 78, Centro - SP/SP</span>
+                <div class="rs">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
             </div>
             <div class="img">
-                <img src="./imgs/logo.png" alt="Brasão" width="400">
+                <h1>SEGURANÇA <br> PRIVADA</h1>
+                <img src="./imgs/logo.png" alt="Brasão" width="350">
             </div>
         </section>
     </main>
 
+    <footer>
+        Desenvolvido pela <a target="_blank" href="https://bentech.vercel.app/"> &copy;bentech 💙</a>
+    </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>

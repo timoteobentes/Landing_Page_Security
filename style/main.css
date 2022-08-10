@@ -340,9 +340,9 @@ footer a {
     HEADER
 /////////////////*/
 
-    header {
+    /* header {
         display: none;
-    }
+    } */
 
     .display-sm {
         display: inline-flex;
@@ -354,8 +354,8 @@ footer a {
         /* width: 7em; */
         background: #000;
         position: relative;
-        top: 3em;
-        left: -4em;
+        top: 5em;
+        left: -2em;
         font-size: 1.5em;
         border-radius: .2em;
         padding: .5em;

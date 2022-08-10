@@ -77,9 +77,10 @@ header nav a:hover {
 main {
     position: relative;
     top: 4.5em;
+    width: 100%;
 }
 
-.main {
+.main {display: flex;
     background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)100%), url('../imgs/vigilante-bancário.jpg');
     height: 50em;
     background-size: cover;
@@ -101,7 +102,6 @@ main {
 .wrapper .texto {
     position: relative;
     top: 3em;
-    left: 4em;
 }
 
 .wrapper .escudo {
@@ -131,7 +131,6 @@ main {
 
 #Servicos .letter h1 {
     position: relative;
-    left: 10em;
     width: 5.4em;
     margin-top: 2em;
     color: #fff;
@@ -182,7 +181,6 @@ main {
 
 #QuemSomos .letter h1 {
     position: relative;
-    left: 9.25em;
     width: 7.4em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -215,7 +213,6 @@ main {
 
 #Beneficios .letter h1 {
     position: relative;
-    left: 9.8em;
     width: 6.3em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -232,20 +229,21 @@ main {
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    margin-left: 12em;
+    /* margin-left: 12em; */
 }
 
 #Beneficios .image ion-icon {
     font-size: 40em;
     color: #ffe600;
     position: relative;
-    left: .5em;
+    /* left: .5em; */
     filter: drop-shadow(0 7px 10px #000);
 }
 
 #Beneficios .conteudo {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .list-beneficios ul li {
@@ -311,11 +309,12 @@ main {
 .img h1 {
     color: #fff;
     text-align: center;
-    font-size: 5em;
+    font-size: 1em;
 }
 
 .img img {
     margin-left: .7em;
+    width: 100px;
 }
 
 /*/////////////////
@@ -326,7 +325,6 @@ footer {
     color: #fff;
     position: relative;
     bottom: 0;
-    left: 1em;
     width: 15em;
 }
 
@@ -393,7 +391,7 @@ footer a {
     }
 
     .wrapper .texto {
-        left: .2em;
+
         top: 7em;
         text-align: center;
         font-size: 1.2em;
@@ -408,7 +406,7 @@ footer a {
     SERVIÇOS
 /////////////////*/
     #Servicos .letter h1 {
-        left: 1.1em;
+        left: .9em;
         font-size: 3.5em;
     }
     .boxes {
@@ -429,7 +427,7 @@ footer a {
 
     .time p {
         top: 1em;
-        font-size: 2.5em;
+        font-size: 2em;
     }
     /*/////////////////
     BENEFIÍCIOS
@@ -440,7 +438,7 @@ footer a {
     }
     .list-beneficios {
         margin-left: 0;
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
     #Beneficios .image ion-icon {
         left: 0;
@@ -485,3 +483,5 @@ footer a {
     }
 }
 
+@media screen and (min-width: 760px) {
+}

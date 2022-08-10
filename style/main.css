@@ -80,7 +80,8 @@ main {
     width: 100%;
 }
 
-.main {display: flex;
+.main {
+    display: flex;
     background: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)100%), url('../imgs/vigilante-bancário.jpg');
     height: 50em;
     background-size: cover;
@@ -131,6 +132,7 @@ main {
 
 #Servicos .letter h1 {
     position: relative;
+    left: 9.2em;
     width: 5.4em;
     margin-top: 2em;
     color: #fff;
@@ -181,6 +183,7 @@ main {
 
 #QuemSomos .letter h1 {
     position: relative;
+    left: 8.4em;
     width: 7.4em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -213,6 +216,7 @@ main {
 
 #Beneficios .letter h1 {
     position: relative;
+    left: 8.5em;
     width: 6.3em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -337,7 +341,7 @@ footer a {
     QUERIES
 /////////////////*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
         /*/////////////////
     HEADER
 /////////////////*/

@@ -304,17 +304,18 @@ main {
 .img {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .img h1 {
     color: #fff;
     text-align: center;
-    font-size: 1em;
+    font-size: 3.5em;
 }
 
 .img img {
     margin-left: .7em;
-    width: 100px;
+    width: 250px;
 }
 
 /*/////////////////
@@ -372,10 +373,6 @@ footer a {
     main {
         top: 0;
         width: 100%;
-    }
-
-    .main {
-        background: none;
     }
     .wrapper {
         width: 14.2em;

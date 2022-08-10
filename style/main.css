@@ -448,9 +448,15 @@ footer a {
         width: 17.6em;
         clip-path: none;
     }
+    .contato .rs {
+        display: flex;
+        width: 5em;
+    }
     .img {
+        display: flex;
         position: relative;
         left: 7em;
+        width: 4em;
     }
     .img h1 {
         font-size: 1em;

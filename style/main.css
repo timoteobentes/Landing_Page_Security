@@ -24,13 +24,6 @@ body {
 
 }
 
-.draw {
-    width: 20em;
-    height: 20em;
-    background: #555;
-    z-index: -999;
-}
-
 /*/////////////////
     HEADER
 /////////////////*/
@@ -44,8 +37,8 @@ header {
     justify-content: center;
 }
 
-header nav, header nav {
-    display: flex;
+header nav {
+    display: block;
 }
 
 header nav a {
@@ -58,6 +51,20 @@ header nav a {
 
 header nav a:hover {
     color: #999;
+}
+
+.display-sm {
+    display: none;
+}
+
+#menu {
+    font-size: 1.6em;
+    color: #fff;
+    z-index: 999;
+}
+
+.visible {
+    display: block !important;
 }
 
 /*/////////////////
@@ -329,61 +336,131 @@ footer a {
 /////////////////*/
 
 @media screen and (max-width: 850px) {
+        /*/////////////////
+    HEADER
+/////////////////*/
+
+    header {
+        display: none;
+    }
+
+    .display-sm {
+        display: inline-flex;
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        z-index: 999;
+        /* width: 7em; */
+        background: #000;
+        position: relative;
+        top: 3em;
+        left: -4em;
+        font-size: 1.5em;
+        border-radius: .2em;
+        padding: .5em;
+    }
+    .nav a {
+        display: flex;
+        margin-bottom: .5em;
+    }
+    /*/////////////////
+    MAIN
+/////////////////*/
+
+    main {
+        top: 0;
+    }
 
     .main {
         background: none;
     }
     .wrapper {
-        width: 24em;
+        width: 14.2em;
         clip-path: none;
     }
-    #Servicos .letter h1 {
-        left: 2em;
+    .wrapper .escudo, .wrapper img {
+        width: 12em;
+        left: 1em;
     }
-    .wrapper .escudo {
-        width: 15em;
+
+    .wrapper .texto {
+        left: .2em;
+        text-align: center;
+    }
+    .acoes a {
+        left: 3.5em;
+        top: 5em;
+        font-size: .8em;
+    }
+
+    /*/////////////////
+    SERVIÇOS
+/////////////////*/
+    #Servicos .letter h1 {
+        left: 1.5em;
+        font-size: 3.5em;
     }
     .boxes {
         flex-direction: column;
     }
+    /*/////////////////
+    QUEM SOMOS
+/////////////////*/
     #QuemSomos .letter h1 {
-        left: 1.5em;
+        left: .5em;
+        font-size: 3.5em;
     }
     .time {
         background: none;
+        height: 40em;
     }
 
     .time p {
         top: 1em;
+        font-size: 4em;
     }
+    /*/////////////////
+    BENEFIÍCIOS
+/////////////////*/
     #Beneficios .letter h1 {
-        left: 1.8em;
+        left: 1em;
+        font-size: 3.5em;
     }
     .list-beneficios {
         margin-left: 0;
+        font-size: 1.5em;
     }
     #Beneficios .image ion-icon {
         left: 0;
+        font-size: 20em;
     }
     #Beneficios .conteudo {
         flex-direction: column;
     }
+    /*/////////////////
+    CONTATO
+/////////////////*/
     #Contato {
         flex-direction: column;
     }
     .contato {
-        width: 30em;
+        width: 17.6em;
+        clip-path: none;
     }
     .img {
         position: relative;
         left: 7em;
     }
     .img h1 {
-        font-size: 3em;
+        font-size: 1em;
     }
     .img img {
-        width: 250px;
+        width: 100px;
     }
+    /*/////////////////
+    FOOTER
+/////////////////*/
     footer {
         top: 6em;
         padding-bottom: 1em;

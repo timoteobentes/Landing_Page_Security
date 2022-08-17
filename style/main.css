@@ -418,12 +418,13 @@ footer a {
     }
     .wrapper .escudo, .wrapper img {
         width: 15em;
-        left: 4em;
+        left: 4.2em;
         top: 7em;
     }
 
     .wrapper .texto {
         top: 7em;
+        left: -.5em;
         text-align: center;
         font-size: 1.2em;
     }
@@ -437,7 +438,7 @@ footer a {
     SERVIÇOS
 /////////////////*/
     #Servicos .letter h1 {
-        left: .5em;
+        left: .1em;
         font-size: 3.5em;
     }
     .boxes {
@@ -467,7 +468,7 @@ footer a {
     BENEFIÍCIOS
 /////////////////*/
     #Beneficios .letter h1 {
-        left: .5em;
+        left: .1em;
         font-size: 3em;
     }
     .list-beneficios {

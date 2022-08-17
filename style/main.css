@@ -443,6 +443,9 @@ footer a {
     .boxes {
         flex-direction: column;
     }
+    .boxes .box-servico .SE {
+        font-size: 1.7em;
+    }
     /*/////////////////
     QUEM SOMOS
 /////////////////*/
@@ -510,7 +513,6 @@ footer a {
 /////////////////*/
     footer {
         top: 3em;
-        left: 3em;
         padding-bottom: 1em;
     }
 }

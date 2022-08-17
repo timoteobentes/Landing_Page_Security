@@ -438,7 +438,7 @@ footer a {
     SERVIÇOS
 /////////////////*/
     #Servicos .letter h1 {
-        left: -.5em;
+        left: -1em;
         font-size: 3.5em;
     }
     .boxes {
@@ -468,7 +468,7 @@ footer a {
     BENEFIÍCIOS
 /////////////////*/
     #Beneficios .letter h1 {
-        left: -.5em;
+        left: -1em;
         font-size: 3em;
     }
     .list-beneficios {

@@ -437,14 +437,14 @@ footer a {
     SERVIÇOS
 /////////////////*/
     #Servicos .letter h1 {
-        left: .9em;
+        left: .5em;
         font-size: 3.5em;
     }
     .boxes {
         flex-direction: column;
     }
     .boxes .box-servico .SE {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     /*/////////////////
     QUEM SOMOS
@@ -467,7 +467,7 @@ footer a {
     BENEFIÍCIOS
 /////////////////*/
     #Beneficios .letter h1 {
-        left: 1em;
+        left: .5em;
         font-size: 3em;
     }
     .list-beneficios {
@@ -513,6 +513,7 @@ footer a {
 /////////////////*/
     footer {
         top: 3em;
+        left: -.1em;
         padding-bottom: 1em;
     }
 }

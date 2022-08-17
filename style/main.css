@@ -424,7 +424,7 @@ footer a {
 
     .wrapper .texto {
         top: 7em;
-        left: -.8em;
+        left: -1em;
         text-align: center;
         font-size: 1.2em;
     }
@@ -438,7 +438,7 @@ footer a {
     SERVIÇOS
 /////////////////*/
     #Servicos .letter h1 {
-        left: -.2em;
+        left: -.5em;
         font-size: 3.5em;
     }
     .boxes {
@@ -468,7 +468,7 @@ footer a {
     BENEFIÍCIOS
 /////////////////*/
     #Beneficios .letter h1 {
-        left: -.2em;
+        left: -.5em;
         font-size: 3em;
     }
     .list-beneficios {

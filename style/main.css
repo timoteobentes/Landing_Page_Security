@@ -417,18 +417,18 @@ footer a {
         border-right: 30px solid #ffe600;
     }
     .wrapper .escudo, .wrapper img {
-        width: 20em;
+        width: 15em;
         left: 4em;
-        top: 9em;
+        top: 7em;
     }
 
     .wrapper .texto {
-        top: 8em;
+        top: 7em;
         text-align: center;
         font-size: 1.2em;
     }
     .acoes a {
-        left: 6em;
+        left: 5em;
         top: 10em;
         font-size: 1.2em;
     }

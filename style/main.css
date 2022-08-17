@@ -408,7 +408,8 @@ footer a {
         background: none;
     }
     .wrapper {
-        width: 14.2em;
+        display: flex;
+        flex-direction: column;
         clip-path: none;
         font-size: 1em;
         width: 100%;
@@ -416,19 +417,19 @@ footer a {
         border-right: 30px solid #ffe600;
     }
     .wrapper .escudo, .wrapper img {
-        width: 15em;
-        left: 10em;
-        top: 15em;
+        width: 20em;
+        left: 4em;
+        top: 9em;
     }
 
     .wrapper .texto {
-        top: 15em;
+        top: 8em;
         text-align: center;
         font-size: 1.2em;
     }
     .acoes a {
-        left: 9em;
-        top: 20em;
+        left: 6em;
+        top: 10em;
         font-size: 1.2em;
     }
 
@@ -484,7 +485,7 @@ footer a {
         flex-direction: column;
     }
     .contato {
-        width: 33.1em;
+        width: 25em;
         clip-path: none;
         font-size: 1em;
     }
@@ -495,7 +496,7 @@ footer a {
     .img {
         display: flex;
         position: relative;
-        left: 10em;
+        left: 7em;
         width: 4em;
     }
     .img h1 {
@@ -509,10 +510,7 @@ footer a {
 /////////////////*/
     footer {
         top: 3em;
-        left: 7.5em;
+        left: 3em;
         padding-bottom: 1em;
     }
-}
-
-@media screen and (min-width: 760px) {
 }
